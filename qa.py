@@ -27,7 +27,7 @@ def app():
             st.success(response) #st.write(response)
 
 if __name__ == '__main__':
-    os.environ['OPENAI_API_KEY'] = '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'
+    os.environ['OPENAI_API_KEY'] = st.secrets["OPENAI_API_KEY"]
     
     # Load the index from your saved index.json file
     index = GPTSimpleVectorIndex.load_from_disk('index.json')
