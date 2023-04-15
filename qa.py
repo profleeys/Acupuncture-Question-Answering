@@ -18,7 +18,7 @@ def app():
 
             if image_path != []: 
                 # Load the image
-                image = Image.open('C:/Users/user/Desktop/穴道/image/'+ image_path[0])
+                image = Image.open('image/'+ image_path[0])
                 #image = image.resize((300, 150))
 
                 # Display the image
